@@ -32,7 +32,7 @@ $(document).ready(() => {
  
 
 class Products {
-    async getProducts() {
+     getProducts() {
       //Array of all products
       let products = [
         {
