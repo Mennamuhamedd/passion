@@ -1,0 +1,38 @@
+.filter-section,
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter {
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+.filter-section {
+  padding: 1rem;
+}
+/* .fliter__line {
+  height: 1.5px;
+  background: #dee2e6;
+  width: 100%;
+  margin-top: 0.5rem;
+} */
+
+.filter__valentien:hover,
+.filter__mday:hover {
+  color: #d633ff;
+  cursor: pointer;
+}
+.fliter__products {
+  color: #d633ff;
+  cursor: pointer;
+}
+.hiden {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .filter {
+    justify-content: space-between;
+  }
+}
