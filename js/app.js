@@ -32,9 +32,9 @@ $(document).ready(() => {
  
 
 class Products {
-     getProducts() {
+    async getProducts() {
       //Array of all products
-      let products = [
+      let products =await [
         {
           sys: { id: "1" },
           fields: {

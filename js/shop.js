@@ -30,9 +30,9 @@ $(document).ready(() => {
   let clearCartBtn = document.querySelector(".clear-all-btn");
   // get all products
   class Products {
-     getProducts() {
+   async  getProducts() {
       //Array of all products
-      let products = [
+      let products =await [
         {
           sys: { id: "1" },
           fields: {
