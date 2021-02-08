@@ -109,22 +109,22 @@ $(document).ready(() => {
   ];
   arrOfCities.forEach(city => {
     $(".select_bottom").append(
-      `<option value=${city.cityName}>${city.cityName}</option>`
+      `<option value="${city.cityName}">${city.cityName}</option>`
     );
     $(".select_top").append(
-      `<option value=${city.cityName}>${city.cityName}</option>`
+      `<option value="${city.cityName}">${city.cityName}</option>`
     );
   });
   $(".select_bottom").change(e => {
+    console.log(e.target.value);
     let specificCity = arrOfCities.filter(
       city => city.cityName === e.target.value
     );
-    let getPrice = specificCity.shipingPrice;
-    console.log(specificCity)
+    let getPrice = specificCity[0].shipingPrice;
+    console.log(specificCity);
     $(".shipping_price").html(`${getPrice}`);
     totalPrice = +$(".shipping_product_price").html() + getPrice;
 
     $(".total_price").html(totalPrice);
   });
-
 });
