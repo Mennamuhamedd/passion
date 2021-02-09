@@ -115,6 +115,17 @@ $(document).ready(() => {
       `<option value="${city.cityName}">${city.cityName}</option>`
     );
   });
+  const shippingProductPrice = document.querySelectorAll(
+    ".shipping_product_price"
+  );
+  const emptyArray = [];
+  const arrOfProducts = shippingProductPrice.forEach(item => {
+    emptyArray.push(+item.innerText);
+  });
+  let filterarray = emptyArray.reduce((a, b) => {
+    return a + b;
+  });
+
   $(".select_bottom").change(e => {
     console.log(e.target.value);
     let specificCity = arrOfCities.filter(
@@ -125,7 +136,7 @@ $(document).ready(() => {
     $("#price_container").html(
       `<span class="text-muted shipping_price" name="billing_price" value="${getPrice}">${getPrice}`
     );
-    totalPrice = +$(".shipping_product_price").html() + getPrice;
+    totalPrice = filterarray + getPrice;
 
     $("#total_container").html(
       `<span class="text-muted total_price" value="${totalPrice}">${totalPrice}</span>`
