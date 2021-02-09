@@ -123,12 +123,14 @@ $(document).ready(() => {
     let getPrice = specificCity[0].shipingPrice;
     console.log(specificCity);
     $("#price_container").html(
-      `<inupt class="text-muted shipping_price" value="${getPrice}">${getPrice}`
+      `<span class="text-muted shipping_price" name="billing_price" value="${getPrice}">${getPrice}`
     );
     totalPrice = +$(".shipping_product_price").html() + getPrice;
 
     $("#total_container").html(
-      `<inupt class="text-muted total_price" value="${totalPrice}">${totalPrice}`
+      `<span class="text-muted total_price" value="${totalPrice}">${totalPrice}</span>`
     );
+    $(".city-input-hidden").val(e.target.value);
+    $(".price-input-hidden").val(getPrice);
   });
 });
