@@ -122,9 +122,13 @@ $(document).ready(() => {
     );
     let getPrice = specificCity[0].shipingPrice;
     console.log(specificCity);
-    $(".shipping_price").html(`${getPrice}`);
+    $("#shipping_container").append(
+      `<inupt class="text-muted shipping_price" value="${getPrice}">${getPrice}`
+    );
     totalPrice = +$(".shipping_product_price").html() + getPrice;
 
-    $(".total_price").html(totalPrice);
+    $(".billing_total").append(
+      `<inupt class="text-muted total_price" value="${totalPrice}">${totalPrice}`
+    );
   });
 });
