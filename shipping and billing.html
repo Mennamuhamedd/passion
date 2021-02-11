@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/billing.css">
 
-  <title>Passtion | Checkout</title>
+  <title>Passtion Flowers | Checkout</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
         <div class="row header-bottom m-0">
           <div class="col-lg-3 col-md-4 col-12 d-flex align-items-center">
             <div class="log">
-              <a href="#"><img src="./img/Logo.png" width="180"></a>
+              <a href="#"><img src="./img/Logo.png" width="160"></a>
 
             </div>
           </div>
@@ -125,150 +125,21 @@
 
       </div>
 
-      <div class="row">
-        <div class="col-md-4 order-md-2 mb-4">
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-muted">Your cart</span>
-            <span class="badge badge-secondary badge-pill">3</span>
-          </h4>
-          <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-condensed billing_price">
-              <div>
-                <h6 class="my-0">Product name</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span>$ <inupt class="text-muted shipping_product_price" value="12">12</inupt></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed billing_shipping">
-              <div>
-                <h6 class="my-0">Shipping</h6>
-              </div>
-             <div class="text-muted shipping_price" id="price_container">
-               
-             </div>
-            </li>
 
-            <li class="list-group-item d-flex justify-content-between billing_total">
-              <span>Total (USD)</span>
-              <div class="text-muted shipping_price" id="total_container">
-               
-              </div>
-            </li>
-          </ul>
-
-
-        </div>
-        <div class="col-md-8 order-md-1">
-          <h4 class="mb-3">Sender Address </h4>
-          <form class="needs-validation" novalidate method="GET" action="">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">First name <span>*</span></label>
-                <input type="text" class="form-controll" name="firstName" id="firstName" placeholder=""  required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Last name <span>*</span></label>
-                <input type="text" class="form-controll" name="test2" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="mb-3">
-              <label for="email">Email <span>*</span></label>
-              <input type="email" class="form-controll" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="address">Address <span>*</span></label>
-              <input type="text" class="form-controll" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-controll" id="address2" placeholder="Apartment or suite">
-            </div>
-
-            <div class="row">
-              <div class="col-md-5 mb-3">
-                <label for="country">Country / Region <span>*</span></label>
-                <select class="custom-selectt d-block w-100 select_top" id="country" required>
-                  <option value="">Choose...</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="state">State / County <span>*</span></label>
-                <input type="text" class="form-controll" id="zip" placeholder="selection anoption" required>
-
-                <div class=" invalid-feedback">
-                  Please provide a valid state.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="town">Town / City <span>*</span></label>
-                <input type="text" class="form-controll" id="town" placeholder="cairo" required>
-                <div class="invalid-feedback">
-                  Zip code required.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="town"> Postcode / ZIP <span>*</span></label>
-                <input type="text" class="form-controll" id="zip" placeholder="00000" required>
-                <div class="invalid-feedback">
-                  Zip code required.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="town"> Phone / Mobile <span>*</span></label>
-                <input type="text" class="form-controll" id="phone" placeholder="01" required>
-                <div class="invalid-feedback">
-                  Zip code required.
-                </div>
-              </div>
-            </div>
-
-
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---->
-  <section class="shipping">
-    <div class="container">
       <div class="col-md-8 order-md-1">
-        <h4 class="mb-3">Recipient Address
-        </h4>
-        <form class="needs-validation" novalidate>
+        <h4 class="mb-3">Sender Address </h4>
+        <form class="needs-validation" novalidate method="GET" action="">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="firstName">First name <span>*</span></label>
-              <input type="text" class="form-controll" id="firstName" placeholder="" value="" required>
-              <input type="hidden" name="shipping-price" class="price-input-hidden">
-              <input type="hidden" name="shipping-city" class="city-input-hidden">
+              <input type="text" class="form-controll" name="firstName" id="firstName" placeholder="" required>
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="lastName">Last name <span>*</span></label>
-              <input type="text" class="form-controll" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-controll" name="test2" id="lastName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
@@ -278,7 +149,7 @@
 
 
           <div class="mb-3">
-            <label for="email">Email <span>*</span> </label>
+            <label for="email">Email <span>*</span></label>
             <input type="email" class="form-controll" id="email" placeholder="you@example.com">
             <div class="invalid-feedback">
               Please enter a valid email address for shipping updates.
@@ -301,7 +172,7 @@
           <div class="row">
             <div class="col-md-5 mb-3">
               <label for="country">Country / Region <span>*</span></label>
-              <select class="custom-selectt d-block w-100 select_bottom" id="country" required>
+              <select class="custom-selectt d-block w-100 select_top" id="country" required>
                 <option value="">Choose...</option>
               </select>
               <div class="invalid-feedback">
@@ -317,14 +188,14 @@
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <label for="town">Town / City <span>*</span> </label>
+              <label for="town">Town / City <span>*</span></label>
               <input type="text" class="form-controll" id="town" placeholder="cairo" required>
               <div class="invalid-feedback">
                 Zip code required.
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <label for="town"> Postcode / ZIP <span>*</span> </label>
+              <label for="town"> Postcode / ZIP <span>*</span></label>
               <input type="text" class="form-controll" id="zip" placeholder="00000" required>
               <div class="invalid-feedback">
                 Zip code required.
@@ -333,83 +204,213 @@
             <div class="col-md-3 mb-3">
               <label for="town"> Phone / Mobile <span>*</span></label>
               <input type="text" class="form-controll" id="phone" placeholder="01" required>
-
-            </div>
-            <!---->
-            <div class="col-md-3 mb-3">
-              <label for="time"> Time for Delivery </label>
-              <input type="text" class="form-controll" id="time" placeholder="5 am" required>
-
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="date"> Delivery Date</label>
-              <input type="text" class="form-controll" id="date" placeholder="dd/mm/yy" required>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-              <label for="note" class="d-note"> Delivery Note</label>
-              <textarea name="text" id="note" cols="50" rows="3"></textarea>
-
-            </div>
-          </div>
-
-
-          <hr class="mb-4">
-
-          <h4 class="mb-3">Payment</h4>
-
-          <div class="d-flex my-3">
-            <div class="custom-control custom-radio">
-              <img src="./img/mastercard.svg" width="80" alt="">
-            </div>
-
-            <div class="custom-control custom-radio">
-              <img src="./img/visa.svg" width="80" alt="">
-            </div>
-            <div class="custom-control custom-radio meeza">
-              <img src="./img/9.png" width="130" alt="">
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="cc-name">Name on card</label>
-              <input type="text" class="form-controll" id="cc-name" placeholder="" required>
-              <small class="text-muted">Full name as displayed on card</small>
               <div class="invalid-feedback">
-                Name on card is required
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="cc-number">Credit card number</label>
-              <input type="text" class="form-controll" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                Credit card number is required
+                Zip code required.
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3 mb-3">
-              <label for="cc-expiration">Expiration</label>
-              <input type="text" class="form-controll" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                Expiration date required
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="cc-cvv">CVV</label>
-              <input type="text" class="form-controll" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                Security code required
-              </div>
-            </div>
-          </div>
-          <hr class="mb-4">
-          <button class="btn-done  btn-block" type="submit">Continue to checkout</button>
+
+
         </form>
+
       </div>
     </div>
+    </div>
+  </section>
+  <!---->
+  <section class="shipping">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed billing_price">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span>$ <inupt class="text-muted shipping_product_price" value="12">12</inupt></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed billing_shipping">
+              <div>
+                <h6 class="my-0">Shipping</h6>
+              </div>
+              <div class="text-muted shipping_price" id="price_container">
+
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between billing_total">
+              <span>Total (USD)</span>
+              <div class="text-muted shipping_price" id="total_container">
+
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Recipient Address
+          </h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name <span>*</span></label>
+                <input type="text" class="form-controll" id="firstName" placeholder="" value="" required>
+                <input type="hidden" name="shipping-price" class="price-input-hidden">
+                <input type="hidden" name="shipping-city" class="city-input-hidden">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name <span>*</span></label>
+                <input type="text" class="form-controll" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="mb-3">
+              <label for="email">Email <span>*</span> </label>
+              <input type="email" class="form-controll" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Address <span>*</span></label>
+              <input type="text" class="form-controll" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-controll" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country / Region <span>*</span></label>
+                <select class="custom-selectt d-block w-100 select_bottom" id="country" required>
+                  <option value="">Choose...</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State / County <span>*</span></label>
+                <input type="text" class="form-controll" id="zip" placeholder="selection anoption" required>
+
+                <div class=" invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="town">Town / City <span>*</span> </label>
+                <input type="text" class="form-controll" id="town" placeholder="cairo" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="town"> Postcode / ZIP <span>*</span> </label>
+                <input type="text" class="form-controll" id="zip" placeholder="00000" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="town"> Phone / Mobile <span>*</span></label>
+                <input type="text" class="form-controll" id="phone" placeholder="01" required>
+
+              </div>
+              <!---->
+              <div class="col-md-3 mb-3">
+                <label for="time"> Time for Delivery </label>
+                <input type="text" class="form-controll" id="time" placeholder="5 am" required>
+
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="date"> Delivery Date</label>
+                <input type="text" class="form-controll" id="date" placeholder="dd/mm/yy" required>
+
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label for="note" class="d-note"> Delivery Note</label>
+                <textarea name="text" id="note" cols="50" rows="3"></textarea>
+
+              </div>
+            </div>
+
+
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-flex my-3">
+              <div class="custom-control custom-radio">
+                <img src="./img/mastercard.svg" width="80" alt="">
+              </div>
+
+              <div class="custom-control custom-radio">
+                <img src="./img/visa.svg" width="80" alt="">
+              </div>
+              <div class="custom-control custom-radio meeza">
+                <img src="./img/9.png" width="130" alt="">
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-controll" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-controll" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-controll" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-controll" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn-done  btn-block" type="submit">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
 
 
     </div>
@@ -527,7 +528,7 @@
         <div class="row">
           <div class="col-xl-6 col-lg-6 text-center text-lg-left">
             <div class="copyright-text">
-              <p>Passion Flowers Copyright &copy; 2020, All Right Reserved <a href="#"></a></p>
+              <p>Passion Flowers Copyright &copy; 2021, All Right Reserved <a href="#"></a></p>
             </div>
           </div>
 

@@ -592,7 +592,7 @@ FOOTER
   width: 100%;
   padding: 14px 28px;
   background: #f8f1e7;
-  border: 1px solid #f8f1e7;
+  border: 1px solid #f7ede0;
   color: #000;
 }
 .subscribe-form button {
@@ -610,7 +610,7 @@ FOOTER
   font-size: 22px;
 }
 .copyright-area {
-  background: #f8f1e7;
+  background: #b8b3ad;
   padding: 25px 0;
 }
 .copyright-text p {
@@ -641,4 +641,27 @@ footer a {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
+}
+/************************************
+payyyy page
+*************************************/
+.pay-order {
+  margin-top: 2rem;
+}
+.pay-now-order {
+  background-color: #d633ff;
+  padding: 18px 50px;
+  border-radius: 15px;
+  border: transparent;
+  outline: none;
+  box-shadow: 0 3px 6px rgb(228, 228, 228);
+  margin: 3rem;
+}
+.pay-order button {
+  outline: none;
+  border: none;
+}
+.pay-now-order a {
+  color: #fff;
+  font-weight: bold;
 }
